@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="it"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Myra Parking - Prenotazioni&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Segoe UI', Tahoma, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(to bottom, #004e7a, #0077be);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>form {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #f0f4f8;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #004e7a;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 2em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 320px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>label {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0.5em 0 1em 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0.6em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #0077be;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #0077be;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #004e7a;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: monospace;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Myra Parking&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;form id="bookingForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="nome"&gt;Nome&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input id="nome" type="text" required placeholder="Mario" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="cognome"&gt;Cognome&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input id="cognome" type="text" required placeholder="Rossi" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="codiceAppartamento"&gt;Codice Appartamento (1-19)&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input id="codiceAppartamento" type="number" min="1" max="19" required placeholder="1" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="inizioPrenotazione"&gt;Inizio prenotazione&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input id="inizioPrenotazione" type="datetime-local" required /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="finePrenotazione"&gt;Fine prenotazione&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input id="finePrenotazione" type="datetime-local" required /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button type="submit"&gt;Prenota&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/form&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="result" id="result"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const supabaseUrl = 'YOUR_SUPABASE_URL';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const supabase = supabase.createClient(supabaseUrl, supabaseAnonKey);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const ORE_PER_APPARTAMENTO = 461.05; // 365*24 / 19</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('bookingForm').addEventListener('submit', async (event) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>event.preventDefault();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const nome = document.getElementById('nome').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const cognome = document.getElementById('cognome').value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const codiceAppartamento = parseInt(document.getElementById('codiceAppartamento').value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const inizioPrenotazione = new Date(document.getElementById('inizioPrenotazione').value);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const finePrenotazione = new Date(document.getElementById('finePrenotazione').value);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (finePrenotazione &lt;= inizioPrenotazione) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert("La fine prenotazione deve essere successiva all'inizio.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Calcolo durata nuova prenotazione</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const durataOre = (finePrenotazione - inizioPrenotazione) / (1000 * 60 * 60);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Seleziono tutte le prenotazioni dell’anno corrente per quell’appartamento</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const inizioAnno = new Date(inizioPrenotazione.getFullYear(), 0, 1).toISOString();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const fineAnno = new Date(inizioPrenotazione.getFullYear(), 11, 31, 23, 59, 59).toISOString();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const { data: prenotazioni, error } = await supabase</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.from('prenotazioni')</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.select('inizio_prenotazione, fine_prenotazione')</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.eq('codice_appartamento', codiceAppartamento)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.gte('inizio_prenotazione', inizioAnno)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lte('fine_prenotazione', fineAnno);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (error) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert('Errore nella lettura delle prenotazioni.');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>console.error(error);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Somma ore già prenotate</p>
+<p class="p1"><span class="Apple-converted-space">      </span>let oreUsate = 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>prenotazioni.forEach(p =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const inizio = new Date(p.inizio_prenotazione);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const fine = new Date(p.fine_prenotazione);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>oreUsate += (fine - inizio) / (1000 * 60 * 60);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const oreTotali = oreUsate + durataOre;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (oreTotali &gt; ORE_PER_APPARTAMENTO) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert(`Hai superato il limite annuale di ${ORE_PER_APPARTAMENTO} ore! Ore totali richieste: ${oreTotali.toFixed(2)}`);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Salva la prenotazione</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const { data, insertError } = await supabase</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.from('prenotazioni')</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.insert([</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nome,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cognome,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>codice_appartamento: codiceAppartamento,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>inizio_prenotazione: inizioPrenotazione.toISOString(),</p>
+<p class="p1"><span class="Apple-converted-space">            </span>fine_prenotazione: finePrenotazione.toISOString(),</p>
+<p class="p1"><span class="Apple-converted-space">            </span>posti: 1</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>]);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (insertError) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert('Errore nella prenotazione!');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>console.error(insertError);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('result').textContent = `Prenotazione effettuata. Ore usate: ${oreTotali.toFixed(2)} su ${ORE_PER_APPARTAMENTO}`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('bookingForm').reset();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
