@@ -79,8 +79,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
-    const supabaseUrl = 'YOUR_SUPABASE_URL';
-    const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';
+    const supabaseUrl = 'https://iokppqhizdvcrtqoclba.supabase.co';
+    const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlva3BwcWhpemR2Y3J0cW9jbGJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA0NTc3ODksImV4cCI6MjA3NjAzMzc4OX0.DU5h7bNXRzPyehV-BONdGiL2CnTqzr2gOSEBgyjSpTw';
     const supabase = supabase.createClient(supabaseUrl, supabaseAnonKey);
 
     const ORE_PER_APPARTAMENTO = 461.05; // 365*24 / 19
@@ -106,7 +106,7 @@
       const inizioAnno = new Date(inizioPrenotazione.getFullYear(), 0, 1).toISOString();
       const fineAnno = new Date(inizioPrenotazione.getFullYear(), 11, 31, 23, 59, 59).toISOString();
 
-      const { data: prenotazioni, error } = await supabase
+      const {  prenotazioni, error } = await supabase
         .from('prenotazioni')
         .select('inizio_prenotazione, fine_prenotazione')
         .eq('codice_appartamento', codiceAppartamento)
@@ -116,6 +116,18 @@
       if (error) {
         alert('Errore nella lettura delle prenotazioni.');
         console.error(error);
+        return;
+      }
+
+      // Controllo sovrapposizione prenotazioni
+      const sovrapposta = prenotazioni.some(p => {
+        const inizio = new Date(p.inizio_prenotazione);
+        const fine = new Date(p.fine_prenotazione);
+        return (inizioPrenotazione < fine) && (finePrenotazione > inizio);
+      });
+
+      if (sovrapposta) {
+        alert("La prenotazione si sovrappone a una prenotazione già esistente.");
         return;
       }
 
